@@ -10,7 +10,11 @@
             "Kitchen",
             "Bathroom",
             "Livingroom",
-            "Toilet"
+            "Toilet",
+            "Кухня",
+            "Ванная",
+            "Гостиная",
+            "Туалет"
         };
     }
 }

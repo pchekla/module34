@@ -19,6 +19,12 @@ namespace HomeApi.Data
         {
             builder.Entity<Room>().ToTable("Rooms");
             builder.Entity<Device>().ToTable("Devices");
+            
+            builder.Entity<Device>()
+                .HasOne(d => d.Room)
+                .WithMany()
+                .HasForeignKey(d => d.RoomId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
