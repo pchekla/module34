@@ -1,6 +1,8 @@
 using Microsoft.OpenApi.Models;
 using Module34.Models.Home;
 using System.IO;
+using System.Reflection;
+using Module34.Profiles;
 
 namespace Module34;
 
@@ -23,6 +25,10 @@ public class Startup
         // Добавляем поддержку MVC и API
         services.AddControllersWithViews();
         services.AddControllers();
+        
+        // Подключаем автомаппинг
+        var assembly = Assembly.GetAssembly(typeof(MappingProfile));
+        services.AddAutoMapper(assembly);
         
         services.AddSwaggerGen(c => {
             c.SwaggerDoc("v1", new OpenApiInfo {
