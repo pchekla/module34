@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Module34.Contracts.Devices;
+namespace Module34.Contracts.Models.Devices;
 
 /// <summary>
 /// Добавляет поддержку нового устройства.

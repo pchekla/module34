@@ -2,8 +2,8 @@ using System.Text;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using Module34.Contracts;
-using Module34.Models.Home;
+using Module34.Contracts.Models.Home;
+using HomeOptions = Module34.Models.Home.HomeOptions;
 
 namespace Module34.Controllers;
 

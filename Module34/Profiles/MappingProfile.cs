@@ -1,6 +1,7 @@
 using AutoMapper;
-using Module34.Contracts;
-using Module34.Models.Home;
+using Module34.Contracts.Models.Home;
+using Address = Module34.Models.Home.Address;
+using HomeOptions = Module34.Models.Home.HomeOptions;
 
 namespace Module34.Profiles;
 
